@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch testaGetESete",
+            "request": "launch",
+            "mainClass": "testaGetESete",
+            "projectName": "Metodos_3dcef2d7"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestaValoresNegativo",
+            "request": "launch",
+            "mainClass": "TestaValoresNegativo",
+            "projectName": "Metodos_3dcef2d7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Principal",
+            "request": "launch",
+            "mainClass": "Principal",
+            "projectName": "Metodos_3dcef2d7"
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "pwa-chrome",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

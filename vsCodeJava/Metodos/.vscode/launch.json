@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch testaValores",
+            "request": "launch",
+            "mainClass": "testaValores",
+            "projectName": "Metodos_3dcef2d7"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestaGetESet",
+            "request": "launch",
+            "mainClass": "TestaGetESet",
+            "projectName": "Metodos_3dcef2d7"
+        },
+        {
+            "type": "java",
             "name": "Launch testaGetESete",
             "request": "launch",
             "mainClass": "testaGetESete",

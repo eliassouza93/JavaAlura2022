@@ -2,6 +2,16 @@ public class Conta {
     private double saldo;
     private int agencia;
     private int numero;
+    private Cliente titular;
+    private static int total;
+
+    public Conta (int agencia , int numero){
+        Conta.total ++;
+        System.out.println("O total de contas é: " + total);
+        this.agencia = agencia;
+        this.numero = numero;
+        System.out.println("Estou criando uma conta");
+    }
 
     String nome;
     int idade;
@@ -15,7 +25,10 @@ public class Conta {
     }
 
     public void setAgencia(int agencia) {
-        this.agencia = agencia;
+        if(agencia <= 0){
+            System.out.println("Não pode valor menor ou igual a zero!");
+            return ;
+        }
     }
 
     public boolean saca(double valor) {
@@ -48,6 +61,17 @@ public class Conta {
     }
 
     public void setNumero(int numero) {
-        this.numero = numero;
+        if(numero <=0){
+            System.out.println("Não pode valor menor ou igual a zero!");
+        }
+    }
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
+    public Cliente getTitular() {
+        return titular;
+    }
+    public int getTotal(){
+        return Conta.total;
     }
 }
